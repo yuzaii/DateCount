@@ -18,10 +18,10 @@ public class main {
         while (Scan.BirthDay==-1) {
             Scan.Scan_BirthDay();
         }
-        System.out.println(Scan.BirthYear);
-        System.out.println(Scan.BirthMonth);
-        System.out.println(Scan.BirthDay);
 
+        DateUtil.birthdaycount(Scan.BirthYear,Scan.BirthMonth,Scan.BirthDay);
+        //
+        System.out.println("你在这个世界已经生存了"+DateUtil.BirthToNowDays+"天");
 //        int y=Scan.Scan_BirthYear();
 //        while (y==-1){
 //            System.out.println(Scan.Scan_BirthYear());
@@ -43,7 +43,7 @@ public class main {
 //        System.out.println(Scan.Scan_BirthDay());
 //        DateUtil dateUtil=new DateUtil();
 //        dateUtil.birthdaycount();
-        System.out.println("你在这个世界已经生存了"+DateUtil.BirthToNowDays+"天");
+//        System.out.println("你在这个世界已经生存了"+DateUtil.BirthToNowDays+"天");
 //        if(BirthToNow<0){
 //            System.out.println("你还未出生");
 //        }else{
