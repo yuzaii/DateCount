@@ -53,14 +53,14 @@ import java.util.Scanner;
             BirthToNowDays = (todayDateSeconds - birthdaySeconds) / 1000 / 60 / 60 / 24;
         }
     public static void lifedaycount(int hopeage) throws ParseException {
-        System.out.println(hopeage);
+//        System.out.println(hopeage);
         //出生年份加期望年龄就是期望活到的年份
         int HopeYear= Scan.BirthYear+hopeage;
         String hopeday=String.valueOf(HopeYear)+"-"+String.valueOf(Scan.BirthMonth)+"-"+String.valueOf(Scan.BirthDay);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date hopedate=new Date();
         hopedate = sdf.parse(hopeday); //解析生日拼接日期成date类型
-        System.out.println(hopedate);
+//        System.out.println(hopedate);
         long hopedaySeconds = hopedate.getTime();
         long todayDateSeconds = todayDate.getTime();
         HopeToNowDays = (hopedaySeconds-todayDateSeconds) / 1000 / 60 / 60 / 24;
