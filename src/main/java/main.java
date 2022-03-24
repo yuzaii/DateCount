@@ -20,8 +20,16 @@ public class main {
         }
 
         DateUtil.birthdaycount(Scan.BirthYear,Scan.BirthMonth,Scan.BirthDay);
-        //
+        System.out.println("你的出生日期是:"+Scan.BirthYear+"年"+Scan.BirthMonth+"月"+Scan.BirthDay+"日");
         System.out.println("你在这个世界已经生存了"+DateUtil.BirthToNowDays+"天");
+
+        while (Scan.HopeAge == -1) {
+            Scan.Scan_HopeAge();
+        }
+        System.out.println(Scan.HopeAge);
+        DateUtil.lifedaycount(Scan.HopeAge);
+        System.out.println(DateUtil.HopeToNowDays);
+
 //        int y=Scan.Scan_BirthYear();
 //        while (y==-1){
 //            System.out.println(Scan.Scan_BirthYear());
